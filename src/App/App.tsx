@@ -1,8 +1,13 @@
 import React from "react";
-import "./App.css";
+
+import { StyledApp } from "./StyledApp";
 
 const App = () => {
-  return <h1>{process.env.NODE_ENV}</h1>;
+  return (
+    <StyledApp>
+      <h1>Hello World</h1>
+    </StyledApp>
+  );
 };
 
 export default App;
