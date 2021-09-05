@@ -1,11 +1,12 @@
 import React from "react";
+import Button from "@custom/Button";
 
 import { StyledApp } from "./StyledApp";
 
 const App = () => {
   return (
     <StyledApp>
-      <h1>Hello World</h1>
+      <Button content='Click Me!' />
     </StyledApp>
   );
 };
