@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <StyledApp />
-      <Button content='Tweet' />
+      <Button content='Tweet' onClick={() => console.log("Tweeted")} />
     </>
   );
 };

@@ -3,10 +3,11 @@ import { StyledButton } from "./StyledButton";
 
 interface ButtonProps {
   content: string;
+  onClick: () => void;
 }
 
-const Button = ({ content }: ButtonProps) => (
-  <StyledButton>{content}</StyledButton>
+const Button = ({ content, onClick }: ButtonProps) => (
+  <StyledButton onClick={onClick}>{content}</StyledButton>
 );
 
 export default Button;
