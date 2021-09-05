@@ -1,13 +1,14 @@
 import React from "react";
 import { StyledButton } from "./StyledButton";
 
-interface ButtonProps {
+interface IButtonProps {
   content: string;
+  styleType: "tweet" | "follow";
   onClick: () => void;
 }
 
-const Button = ({ content, onClick }: ButtonProps) => (
-  <StyledButton onClick={onClick}>{content}</StyledButton>
+const Button = ({ content, ...props }: IButtonProps) => (
+  <StyledButton {...props}>{content}</StyledButton>
 );
 
 export default Button;
