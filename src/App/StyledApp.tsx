@@ -1,5 +1,15 @@
-import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
-export const StyledApp = styled.div`
-  color: orange;
+export const StyledApp = createGlobalStyle`
+  * {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  *:focus {
+    outline: none;
+  }
 `;

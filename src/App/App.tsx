@@ -5,9 +5,10 @@ import { StyledApp } from "./StyledApp";
 
 const App = () => {
   return (
-    <StyledApp>
-      <Button content='Click Me!' />
-    </StyledApp>
+    <>
+      <StyledApp />
+      <Button content='Tweet' />
+    </>
   );
 };
 
