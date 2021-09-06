@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "@custom/Button";
 
-import Container from "./styles";
+import GlobalStyle from "./styles";
 
 const App = () => {
   return (
     <>
-      <Container />
+      <GlobalStyle />
       <Button
         content='Tweet'
         buttonType='tweet'
