@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const StyledApp = createGlobalStyle`
+const Container = createGlobalStyle`
   * {
     padding: 0;
     margin: 0;
@@ -13,3 +13,5 @@ export const StyledApp = createGlobalStyle`
     outline: none;
   }
 `;
+
+export default Container;

@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "@custom/Button";
 
-import { StyledApp } from "./StyledApp";
+import Container from "./styles";
 
 const App = () => {
   return (
     <>
-      <StyledApp />
+      <Container />
       <Button
         content='Tweet'
         styleType='follow'

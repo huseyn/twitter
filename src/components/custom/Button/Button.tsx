@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledButton } from "./StyledButton";
+import Container from "./styles";
 
 interface IButtonProps {
   content: string;
@@ -8,7 +8,7 @@ interface IButtonProps {
 }
 
 const Button = ({ content, ...props }: IButtonProps) => (
-  <StyledButton {...props}>{content}</StyledButton>
+  <Container {...props}>{content}</Container>
 );
 
 export default Button;
