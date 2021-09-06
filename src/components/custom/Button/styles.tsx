@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { ButtonType } from "./types";
 
 const tweetButtonStyle = css`
   background: rgb(133, 133, 224);
@@ -13,11 +14,12 @@ const followButtonStyle = css`
   background: transparent;
 `;
 
-type ButtonType = "tweet" | "follow";
-const getButtonTypeStyles = (props: { styleType: ButtonType }) => {
-  if (props.styleType === "tweet") return tweetButtonStyle;
-  return followButtonStyle;
+const buttonStyles = {
+  tweet: tweetButtonStyle,
+  follow: followButtonStyle,
 };
+const getButtonTypeStyles = (props: { styleType: ButtonType }) =>
+  buttonStyles[props.styleType];
 
 const Container = styled.button`
   display: block;
