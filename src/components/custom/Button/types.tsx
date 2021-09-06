@@ -1,6 +1,6 @@
 export interface IButtonProps {
   content: string;
-  styleType: ButtonType;
+  buttonType: ButtonType;
   onClick: () => void;
 }
 

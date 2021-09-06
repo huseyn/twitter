@@ -18,8 +18,8 @@ const buttonStyles = {
   tweet: tweetButtonStyle,
   follow: followButtonStyle,
 };
-const getButtonTypeStyles = (props: { styleType: ButtonType }) =>
-  buttonStyles[props.styleType];
+const getButtonTypeStyles = (props: { buttonType: ButtonType }) =>
+  buttonStyles[props.buttonType];
 
 const Container = styled.button`
   display: block;

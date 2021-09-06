@@ -9,7 +9,7 @@ const App = () => {
       <Container />
       <Button
         content='Tweet'
-        styleType='tweet'
+        buttonType='tweet'
         onClick={() => console.log("Tweeted")}
       />
     </>
