@@ -6,13 +6,18 @@
   "scripts": {
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev --open",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --env=jsdom"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "resolutions": {
     "styled-components": "^5"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest-setup.ts"
+    ]
   },
   "dependencies": {
     "@types/styled-components": "^5.1.14",
@@ -27,6 +32,10 @@
     "@babel/preset-env": "^7.15.4",
     "@babel/preset-react": "^7.14.5",
     "@babel/preset-typescript": "^7.15.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.0",
+    "@types/jest": "^27.0.1",
+    "@types/jsdom": "^16.2.13",
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
     "babel-loader": "^8.2.2",
@@ -34,7 +43,10 @@
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "global-jsdom": "^8.2.0",
     "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.2.0",
+    "jsdom": "^17.0.0",
     "style-loader": "^3.2.1",
     "webpack": "^5.52.0",
     "webpack-cli": "^4.8.0",
