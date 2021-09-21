@@ -12,6 +12,16 @@ const GlobalStyle = createGlobalStyle`
   *:focus {
     outline: none;
   }
+  
+
+html,
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background: #15202b;
+}
+
 `;
 
 export default GlobalStyle;
