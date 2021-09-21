@@ -5,7 +5,9 @@ module.exports = {
   entry: path.resolve(__dirname, "..", "./src/index.tsx"),
   resolve: {
     alias: {
-      "@custom": path.resolve(__dirname, "..", "./src/components/custom/"),
+      "@custom": path.resolve(__dirname, "..", "./src/components/custom"),
+      "@pages": path.resolve(__dirname, "..", "./src/components/pages"),
+      "@routing": path.resolve(__dirname, "..", "./src/components/routing"),
     },
     extensions: [".tsx", ".ts", ".js"],
   },
@@ -33,6 +35,9 @@ module.exports = {
         type: "asset/inline",
       },
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   output: {
     path: path.resolve(__dirname, "..", "./build"),

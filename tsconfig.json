@@ -21,7 +21,9 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@custom/*": ["./src/components/custom/*"]
+      "@custom/*": ["./src/components/custom/*"],
+      "@pages/*": ["./src/components/pages/*"],
+      "@routing/*": ["./src/components/routing/*"]
     }
   },
   "include": ["./src/**/*"]

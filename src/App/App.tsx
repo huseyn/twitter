@@ -1,17 +1,19 @@
 import React from "react";
-import Button from "@custom/Button";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import GlobalStyle from "./styles";
+
+import Routes from "@routing/Routes";
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Button
-        content='Tweet'
-        buttonType='tweet'
-        onClick={() => console.log("Tweeted")}
-      />
+      <BrowserRouter>
+        <Switch>
+          <Route component={Routes} />
+        </Switch>
+      </BrowserRouter>
     </>
   );
 };
