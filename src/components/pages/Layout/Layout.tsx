@@ -4,13 +4,12 @@ import { Switch, Route, useRouteMatch } from "react-router-dom";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
 
-const Landing = () => {
+const Layout = () => {
   const { path } = useRouteMatch();
-  console.log(`${path}home`);
 
   return (
     <>
-      <h2>Landing</h2>
+      <h2>Layout</h2>
       <Switch>
         <Route path={`${path}home`} component={Home} />
         <Route path={`${path}profile`} component={Profile} />
@@ -19,4 +18,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Layout;
