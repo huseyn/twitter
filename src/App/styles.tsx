@@ -15,7 +15,8 @@ const GlobalStyle = createGlobalStyle`
   
 
 html,
-body {
+body,
+body> #root {
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;

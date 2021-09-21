@@ -18,6 +18,7 @@ const buttonStyles = {
   tweet: tweetButtonStyle,
   follow: followButtonStyle,
 };
+
 const getButtonTypeStyles = (props: { buttonType: ButtonType }) =>
   buttonStyles[props.buttonType];
 
